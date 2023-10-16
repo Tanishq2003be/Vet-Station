@@ -1,0 +1,147 @@
+/* Reset some default styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Apply a font style for the whole document (you can replace 'font-family' with your desired font) */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* Style for the navigation bar */
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #00bcd4;
+}
+
+
+/* Style for the main section */
+
+.firstSection {
+    background-image: url('img/background.jpg');
+    /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.box-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.firstHalf {
+    flex: 1;
+}
+
+.firstHalf p.text-big {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.firstHalf p.text-small {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.buttons .btn {
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttons .btn:hover {
+    background-color: #0097a7;
+}
+
+.secondHalf img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Style for the sections */
+
+.section {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.sectionTag {
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+.sectionSubTag {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.imgFluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Add styles for other sections, buttons, forms, and footer as needed */
+
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+    }
+    .nav-list li {
+        margin: 10px 0;
+    }
+    .box-main {
+        flex-direction: column;
+    }
+}
